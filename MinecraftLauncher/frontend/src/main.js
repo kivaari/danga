@@ -3,6 +3,15 @@ import './app.css';
 
 import logo from './assets/images/logo-universal.png';
 import {Greet} from '../wailsjs/go/main/App';
+import { StartGame } from '../../wailsjs/go/backend/Launcher';
+
+function launchGame() {
+    StartGame().then(() => {
+        console.log("Game started");
+    }).catch((error) => {
+        console.error("Failed to start game:", error);
+    });
+}
 
 document.querySelector('#app').innerHTML = `
     <img id="logo" class="logo">

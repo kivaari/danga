@@ -1,0 +1,5 @@
+{
+    "javaPath": "/path/to/java",
+    "minecraftPath": "/path/to/minecraft",
+    "defaultVersion": "1.16.5"
+}
